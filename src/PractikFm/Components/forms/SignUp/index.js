@@ -5,8 +5,8 @@ import styles from "./SignUpForm.module.scss";
 import { SIGN_UP_SCHEMA } from "../../../utils/schemasValidation";
 
 const initialValues = {
-  firstName:'',
-  lastName:'',
+  fname:'',
+  lname:'',
   display:'',
   email: "",
   password: "",

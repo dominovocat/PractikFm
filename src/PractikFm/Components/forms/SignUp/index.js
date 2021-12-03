@@ -5,9 +5,9 @@ import styles from "./SignUpForm.module.scss";
 import { SIGN_UP_SCHEMA } from "../../../utils/schemasValidation";
 
 const initialValues = {
-  fname:'',
-  lname:'',
-  display:'',
+  fname: "",
+  lname: "",
+  display: "",
   email: "",
   password: "",
 };
@@ -38,11 +38,39 @@ const SignUpForm = (props) => {
               name="confirmPassword"
               placeholder="Confirm Password"
             />
-            <input className={styles.Create} type="submit" value="Create Account" />
-            <label className={styles.label}>
-              <radio>Join As a Buyer</radio>
-              <radio>Join As a Creativ or Marketplace Seller</radio>
-            </label>
+            <div className={styles.radio}>
+              <input
+                type="radio"
+                value="radioOne"
+                name="choise"
+                id="choiseOne"
+              ></input>
+              <label for="choiseOne">
+                <h2>Join As a Buyer</h2>
+                <p>
+                  I am looking for a Name, Logo or Tagline for my business,
+                  brand or product.
+                </p>
+              </label>
+              <input
+                type="radio"
+                value="radioTwo"
+                name="choise"
+                id="choiseTwo"
+              ></input>
+              <label for="choiseTwo">
+                <h2>Join As a Creative or Marketplace Seller</h2>
+                <p>
+                  I plan to submit name ideas, Logo designs or sell names in
+                  Domain Marketplace.
+                </p>
+              </label>
+            </div>
+            <input
+              className={styles.Create}
+              type="submit"
+              value="Create Account"
+            />
           </Form>
         );
       }}

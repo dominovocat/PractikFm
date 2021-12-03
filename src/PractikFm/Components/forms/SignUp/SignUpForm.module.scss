@@ -2,14 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 25vh;
+  margin: 20vh;
 }
 .Create{
   width: inherit;
   height: inherit;
 }
-.label{
+.radio{
   display: flex;
   flex-direction: column;
 }
+p{
+  color:#fff;
+}
+h2{
+  color: #fff;
+}
+
 

@@ -28,7 +28,7 @@ const SignInForm = (props) => {
               type="password"
               placeholder="Password"
             />
-            <input type="submit" value="Sign In" />
+            <input type="submit" value="Login" />
           </Form>
         );
       }}

@@ -7,8 +7,12 @@ export const EMAIL_SCHEMA = Yup.string().email('Enter correct email').required()
 
 export const PASSWORD_SCHEMA = Yup.string().matches(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,32}$/,'Enter correct password').required();
 
+export const DISPLAY_SCHEMA = Yup.string().matches(/^[A-Z][a-z]{1,16}$/,'Must be somethink').required();
+
 export const SIGN_UP_SCHEMA = Yup.object({
   fname: NAME_SCHEMA,
+  lname: NAME_SCHEMA,
+  display: DISPLAY_SCHEMA,
   sname: NAME_SCHEMA,
   email: EMAIL_SCHEMA,
   password:PASSWORD_SCHEMA,

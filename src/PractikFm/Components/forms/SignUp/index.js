@@ -2,7 +2,7 @@ import { Form, Formik } from "formik";
 import React from "react";
 import InputWrapper from "../InputWrapper";
 import styles from "./SignUpForm.module.scss";
-import { SIGN_IN_SCHEMA } from "../../../utils/schemasValidation";
+import { SIGN_UP_SCHEMA } from "../../../utils/schemasValidation";
 
 const initialValues = {
   firstName:'',
@@ -20,13 +20,13 @@ const SignUpForm = (props) => {
     <Formik
       initialValues={initialValues}
       onSubmit={onSubmit}
-      validationSchema={SIGN_IN_SCHEMA}
+      validationSchema={SIGN_UP_SCHEMA}
     >
       {(formikProps) => {
         return (
           <Form className={styles.AllIn}>
-            <InputWrapper name="firstName" placeholder="First Name" />
-            <InputWrapper name="lastName" placeholder="Last Name" />
+            <InputWrapper name="fname" placeholder="First Name" />
+            <InputWrapper name="lname" placeholder="Last Name" />
             <InputWrapper name="display" placeholder="Display Name" />
             <InputWrapper name="email" placeholder="Email" />
             <InputWrapper

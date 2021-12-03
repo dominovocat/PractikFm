@@ -7,11 +7,11 @@ const Header = (props) => {
   return (
     <header>
       <Link to="/" className={styles.Header}>
-        <img src="/static/images/squad.png" />
+        <img src="/static/images/squad.png" alt="squad" />
         {path === "/" || path === "/signup" ? (
           <Link to="/login">Login</Link>
         ) : (
-          <Link to="/signup">signup</Link>
+          <Link to="/signup">Signup</Link>
         )}
       </Link>
     </header>

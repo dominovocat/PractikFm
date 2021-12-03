@@ -1,22 +1,31 @@
-.AllIn{
+.h2Form {
+  font-size: 30px;
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+
+  margin: 0 auto;
+}
+
+.AllIn {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin: 20vh;
 }
-.Create{
+.Create {
   width: inherit;
   height: inherit;
 }
-.radio{
+.radio {
   display: flex;
   flex-direction: column;
 }
-p{
-  color:#fff;
-}
-h2{
+p {
   color: #fff;
 }
-
-
+h2 {
+  color: #fff;
+}

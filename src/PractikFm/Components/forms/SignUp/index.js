@@ -25,6 +25,8 @@ const SignUpForm = (props) => {
       {(formikProps) => {
         return (
           <Form className={styles.AllIn}>
+            <h2 className={styles.h2Form}>CREATE AN ACCOUNT</h2>
+            <p>We always keep your name and email address private.</p>
             <InputWrapper name="fname" placeholder="First Name" />
             <InputWrapper name="lname" placeholder="Last Name" />
             <InputWrapper name="display" placeholder="Display Name" />

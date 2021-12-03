@@ -22,6 +22,7 @@ const SignInForm = (props) => {
       {(formikProps) => {
         return (
           <Form className={styles.Form}>
+            <h1>Login to your account</h1>
             <InputWrapper name="email" placeholder="Email" />
             <InputWrapper
               name="password"
